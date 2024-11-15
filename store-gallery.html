@@ -1,0 +1,94 @@
+
+<!--Excersise 7-3-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eco-Friendly Fashion Store - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header>
+        <img src="images/logo.png" alt="Eco-Friendly Fashion Logo" class="logo">
+        <h1>The Eco-Friendly Fashion Store</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+           
+            <li><a href="newspage.html">News</a></li>
+            
+        
+            
+            <li><a href="order.html">Order</a></li>
+           
+           
+            <li><a href="store-menu.html"> Summer collection</a></li>
+            <li><a href="collection.html"> Accessories Collection</a></li>
+
+
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h2>Welcome to Our Store Gallery</h2>
+
+        
+        <h3>Organic Cotton Clothing</h3>
+        <p>Here’s a look at our stunning organic cotton clothing:</p>
+
+        <p>
+            <picture>
+                <!-- Picture element for responsive images of organic cotton clothing -->
+                 <!-- Source element provides large versions of the image for larger screens -->
+                <source media="(min-width: 480px)" 
+                        srcset="images/Cotton-1200.jpg 1200w, images/Cotton-800.jpg 800w"
+                        sizes="80vw">
+                        <!-- Fallback image for smaller screens -->
+                <img src="images/Cotton-400.jpg" alt="organic cotton clothing">
+            </picture>
+         
+        </p>
+        
+        <p>
+            
+            <h3>Bamboo Clothing</h3>
+            <p>Check out our stylish bamboo clothing options:</p>
+            <!-- Picture element for responsive images of bamboo clothing -->
+            <picture>
+                <source media="(min-width: 480px)" 
+                        srcset="images/bamboo-clothing-1200.jpg 1200w, images/bamboo-clothing-800.jpg 800w"
+                        sizes="80vw">
+                <img src="images/bamboo-clothing-400.jpg" alt="bamboo clothing items">
+            </picture>
+           
+        </p>
+
+        <p>
+            
+            <h3>Recycled Materials Collection</h3>
+            <p>Discover our unique collection made from recycled materials:</p>
+            <!-- Picture element for responsive images of recycled materials collection -->
+            <picture>
+                <source media="(min-width: 480px)" 
+                        srcset="images/recycled-material-1200.jpg 1200w, images/recycled-material-800.jpg 800w"
+                        sizes="80vw">
+                <img src="images/recycled-material-400.jpg" alt="clothing made from recycled materials">
+            </picture>
+           
+        </p>
+
+    </main>
+
+    <footer>
+        <p>All content copyright <span>&copy;</span> 2024, The Eco-Friendly Fashion Store</p>
+    </footer>
+</body>
+</html>

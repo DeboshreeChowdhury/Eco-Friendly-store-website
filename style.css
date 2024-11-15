@@ -1,0 +1,239 @@
+/* General Styles */
+
+/* Exercise 14-1 to add padding 
+and improve the layout of specific sections*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background-color: #faf3e0;
+    margin: 0; /* EXERCISE 14-3.*/
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #8bc34a;
+    color: white;
+    height: 15em; 
+}
+/* EXERCISE 14-2. */
+main {
+    padding: 1em;
+    border: double 4px #EADDC4; 
+     border-radius: 25px; 
+    margin: 2.5%; /*EXERCISE 14-3. */
+}
+aside {  
+
+    padding: 1em;
+    padding-left: 45px;  
+     border-top-right-radius: 25px;
+      margin: 1em 2.5% 0 10%; /* EXERCISE 14-3.*/
+  } 
+
+ 
+
+
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center; /* Center the navigation */
+}
+/* EXERCISE 16-1. Making a navigation bar with Flexbox*/
+
+nav ul {
+    list-style-type: none; /*EXERCISE 16-1*/
+    padding: 0;
+    margin: 0; /* EXERCISE 14-3.*/
+    display: flex; /* Turn the ul into a flex container EXERCISE 16-1*/
+    justify-content: center; /* Center-align the navigation items ...EXERCISE 16-1*/
+}
+nav ul li a { /* Exercise 16-1 */
+    display: block; /* Display as block for better control */
+    color: rgb(21, 86, 51);
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid; /* Adds a border around links */
+    border-radius: 0.5em; /* Rounded corners */
+    padding: 0.5em 1em; /* Padding inside links */
+    margin: 0.5em; /* Space around links */
+}
+ header p {  /* EXERCISE 14-3. */
+
+ margin-top: -12px;
+ }
+
+nav ul li {
+    margin: 0 15px; /* Spacing between items */
+}
+
+
+
+nav ul li a:hover {
+    background-color: rgba(139, 195, 74, 0.2); /* Light green background on hover */
+}
+
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    color: #8bc34a;
+    margin-bottom: 10px;
+}
+ /*EXERCISE 14-2. */
+ h3 {
+  
+ border-top: 1px solid;   
+  border-left: 3px solid;     
+  padding-left: 1em; 
+   margin-top: 2.5em;/* EXERCISE 14-3.*/
+}
+
+/* EXERCISE 14-2. */
+ a {
+  text-decoration: none;
+   border-bottom: 1px dotted;
+    padding-bottom: .2em;
+ }
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px; /* Adding a max-width for better readability on large screens */
+}
+
+blockquote {
+    background-color: #f1f8e9;
+    border-left: 5px solid #8bc34a;
+    margin: 20px 0;
+    padding: 15px;
+    font-style: italic;
+}
+
+article {
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #8bc34a;
+    background-color: #fff;
+    width: 80%;
+    max-width: 800px; /* Consistent max-width for articles */
+}
+
+article header {
+    font-size: 0.9em;
+    color: #888;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #8bc34a;
+    color: white;
+    text-align: center;
+    /*padding: 10px;*/
+    padding: 1em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em; /* Reduce size for smaller screens */
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Reduce margin for smaller screens */
+    }
+
+    section,
+    article {
+        width: 90%; /* Increase width for smaller screens */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* This will maintain the aspect ratio */
+    }
+    
+    
+}
+#order {
+    background: white; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+}
+
+#location {
+    padding: 1em;
+    padding-left: 45px;
+    background-color: #f1f8e9;
+    border-radius: 8px;
+}
+
+
+/*Excersise 16-2* EXERCISE 16-2. A flexible online menu*/
+
+
+#menu {
+    border: 3px solid #783F27; /* Visual boundary as shown in exercise */
+    display: flex;             /* Makes #menu a flex container */
+    flex-flow: row wrap;       /* Combines flex-direction and flex-wrap */
+    justify-content: center;   /* Centers items along the main axis */
+}
+
+.menu-item {
+    display: flex;                /* Makes each item a flex container */
+    flex-direction: column;       /* Stacks content vertically within each item */
+    width: 240px;                 /* Fixed width as mentioned in the exercise */
+    border: 1px solid #ccc;       /* Border for visual separation of items */
+    padding: 15px;                /* Adds internal padding for content spacing */
+    margin: 10px;                 /* Adds space between items */
+    box-shadow: 2px 2px 5px rgba(91, 21, 21, 0.1); /* Adds shadow for depth */
+}
+
+.menu-item img {
+    width: 100%;               /* Ensures image fills container width */
+    height: 150px;             /* Fixed height for uniform image size */
+    object-fit: cover;         /* Ensures image covers set dimensions without distortion */
+    border-radius: 5px;        
+}
+
+.price {
+    margin-top: auto;          /* Pushes the price to the bottom of the item */
+    font-weight: bold;
+    color: #783F27;            /* Matches border color for a cohesive design */
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Order Your Eco-Friendly Fashion</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            
+           
+            <li><a href="newspage.html">News</a></li>
+            <li><a href="store-gallery.html">Gallery</a></li>
+        
+            
+            
+            <li><a href="video.html">Video</a></li>
+           
+            <li><a href="store-menu.html"> Summer collection</a></li>
+            <li><a href="collection.html"> Accessories Collection</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="order">
+            <h2>Order Form</h2>
+            <p>Get ready to turn heads with your eco-friendly choices! Fill in the details and let’s make it happen! ✨</p>
+
+            <!-- Form Element -->
+            <form action="submit_order.php" method="post">
+                <!--fieldset-->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <ul>
+                        <li>
+                            <label for="customername">Name:</label>
+                            <input type="text" id="customername" name="customername" required>
+                        </li>
+                        <li>
+                            <label for="customeraddress">Address:</label>
+                            <input type="text" id="customeraddress" name="customeraddress" required>
+                        </li>
+                        <li>
+                            <label for="customerphone">Telephone Number:</label>
+                            <input type="tel" id="customerphone" name="customerphone" required>
+                        </li>
+                        <li>
+                            <label for="customeremail">Email:</label>
+                            <input type="email" id="customeremail" name="customeremail" required>
+                        </li>
+                        <li>
+                            <label for="instructions">Delivery Instructions:</label><br>
+                            <textarea id="instructions" name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea>
+                            <p>Got any special requests? Let us know how we can make your delivery as fabulous as your new outfit! 💌</p>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <!-- Outfit Specs Fieldset -->
+                <fieldset>
+                    <legend>Outfit Specs</legend>
+
+                    <!-- Style Fieldset -->
+                    <fieldset>
+                        <legend>Style <em>(Choose one)</em>:</legend>
+                        <ul>
+                            <li>
+                                <label><input type="radio" id="casual" name="style" value="casual"> Casual</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" id="formal" name="style" value="formal"> Formal</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" id="sporty" name="style" value="sporty"> Sporty</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <!-- Materials Fieldset -->
+                    <fieldset>
+                        <legend>Materials <em>(Choose as many as you want)</em>:</legend>
+                        <ul>
+                            <li>
+                                <label><input type="checkbox" id="organic-cotton" name="material[]" value="Organic Cotton" > Organic Cotton</label>
+                            </li>
+                            <li>
+                                <label><input type="checkbox" id="recycled-polyester" name="material[]" value="Recycled Polyester"> Recycled Polyester</label>
+                            </li>
+                            <li>
+                                <label><input type="checkbox" id="bamboo-fiber" name="material[]" value="Bamboo Fiber"> Bamboo Fiber</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <!-- Quantity Fieldset -->
+                    <fieldset>
+                        <legend>How many items would you like?</legend>
+                        <label for="quantity">Choose quantity:</label>
+                        <select id="quantity" name="quantity" size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </fieldset>
+
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Get My Eco-Style! 🌟">
+                    <input type="reset" value="Reset">
+                </p>
+            </form> <!-- End of Form -->
+
+        </section>
+    </main>
+
+    <footer>
+        <p>All content copyright <span>&copy;</span> 2024, The Eco-Friendly Fashion Store</p>
+    </footer>
+</body>
+
+</html>
