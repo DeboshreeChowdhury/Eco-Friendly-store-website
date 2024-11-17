@@ -1,7 +1,7 @@
 /* General Styles */
 :root {
     --primary-green: #8bc34a;
-    --secondary-green: #f1f8e9;
+    --secondary-green: #f3f3f3;
     --dark-green: #456f3d;
     --earth-tone: #faf3e0;
     --text-color: #333;
@@ -30,9 +30,10 @@ body {
 /* Header */
 header {
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
     background-color: var(--primary-green);
-    color: rgb(60, 187, 60);
+    color: rgb(166, 230, 77);
+    box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 header .logo {
@@ -46,11 +47,21 @@ header h1 {
     margin: 0;
 }
 
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
 /* Navigation */
+
 nav {
     background-color: white;
     border-bottom: 1px solid var(--primary-green);
     box-shadow: 0 2px 5px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 10%;
 }
 
 nav ul {
@@ -58,20 +69,24 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centers the navigation links */
+    align-items: center; /* Vertically centers the links */
+    gap: 20px; 
+    
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
     color: var(--dark-green);
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 10px 20px; /* More padding for better spacing */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 1em; /* Ensure consistent font size */
 }
 
 nav ul li a:hover,
@@ -79,6 +94,8 @@ nav ul li a:focus {
     background-color: var(--primary-green);
     color: white;
 }
+
+
 
 /* Main Content */
 main {
@@ -94,6 +111,7 @@ main {
 h2 {
     color: var(--primary-green);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h3 {
@@ -130,6 +148,7 @@ blockquote {
     padding: 15px;
     font-style: italic;
     border-radius: 5px;
+    font-size: 1.1em;
 }
 
 /* Articles */
@@ -145,27 +164,64 @@ article {
 article header {
     font-size: 0.9em;
     color: #888;
+    margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
     background-color: var(--primary-green);
-    color: white;
+    color: rgb(81, 205, 40);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     font-size: 0.9em;
+    box-shadow: 0 -2px 10px var(--shadow-color);
 }
 
 footer p {
     margin: 5px 0;
 }
 
+footer a {
+    color: rgb(10, 11, 10);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--dark-green);
+}
+
 /* Form Styling */
-#order {
+form {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px var(--shadow-color);
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--dark-green);
 }
 
 /* Location Section */
@@ -173,6 +229,7 @@ footer p {
     padding: 1em;
     background-color: var(--secondary-green);
     border-radius: 8px;
+    text-align: center;
 }
 
 /* Menu */
@@ -212,6 +269,7 @@ footer p {
     margin-top: auto;
     font-weight: bold;
     color: var(--accent-color);
+    text-align: center;
 }
 
 /* Video */
@@ -225,6 +283,7 @@ video {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
@@ -248,5 +307,15 @@ video {
     section,
     article {
         width: 100%;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.8em;
     }
 }
