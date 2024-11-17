@@ -1,122 +1,172 @@
-
-
-<!--EXERCISE 5-3. The Eco-Friendly Fashion Store news page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Eco-Friendly Fashion Store - News Page</title>
+    <meta name="description" content="Discover the latest news and updates about eco-friendly fashion, sustainable techniques, and upcoming events.">
+    <meta name="keywords" content="eco-friendly news, sustainable fashion, green living, sustainable updates">
+    <meta name="author" content="Eco-Friendly Fashion Store">
+    <title>News & Updates | Eco-Friendly Fashion Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section with logo and title -->
-    <header>
-        <img src="images/logo.png" alt="Eco-Friendly Fashion Logo" class="logo">
-        <h1>The Eco-Friendly Fashion Store</h1>
+    <!-- Header Section -->
+    <header class="bg-light py-3">
+        <div class="container text-center">
+            <img src="images/logo.png" alt="Eco-Friendly Fashion Logo" class="img-fluid mb-2" style="max-width: 120px;">
+            <h1 class="display-5">The Eco-Friendly Fashion Store</h1>
+            <p class="lead">Stay updated with the latest in sustainable fashion.</p>
+        </div>
     </header>
 
-    <!-- Navigation Section with links to different sections of the page -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            
-           
-            
-            <li><a href="store-gallery.html">Gallery</a></li>
-        
-            
-            <li><a href="order.html">Order</a></li>
-            <li><a href="video.html">Video</a></li>
-           
-            <li><a href="store-menu.html"> Summer collection</a></li>
-            <li><a href="collection.html"> Accessories Collection</a></li>
-
-        </ul>
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eco-Friendly Fashion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eco-fashion.html">Eco Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="newspage.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store-gallery.html">Store Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Accessories collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="waste-reduction.html">Eco Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eco-table.html">Eco Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <hr>
+    <hr class="my-4">
 
-    <main>
-       
-        <!--Included 4 articles news as examples on the page-->
-        <article>
-            <header>
-                <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-01">October 1, 2024</time></small></p>
-                <h3>New Fall Collection Launch</h3>
-            </header>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- News Section -->
+        <section id="news" class="mb-5">
+            <h2 class="text-center mb-4">Latest News</h2>
+            <!-- Article 1 -->
+            <article class="mb-5">
+                <header>
+                    <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-01">October 1, 2024</time></small></p>
+                    <h3>New Fall Collection Launch</h3>
+                </header>
+                <p>We are thrilled to announce our new fall collection! Stop by to check out these eco-friendly fashion pieces:</p>
+                <ul>
+                    <li><strong>Organic Cotton Hoodie</strong> - $45.00</li>
+                    <li><strong>Bamboo T-Shirt</strong> - $25.00</li>
+                    <li><strong>Recycled Polyester Jacket</strong> - $60.00</li>
+                </ul>
+                <p>This collection is made from sustainable materials to help reduce our environmental impact.</p>
+                <blockquote class="blockquote">"Fashion is about dressing according to what’s fashionable. Style is more about being yourself." — Oscar de la Renta</blockquote>
+                <p>Join us for a special event on <time datetime="2024-10-15">October 15</time>. Enjoy refreshments and receive a discount on your first purchase!</p>
+            </article>
 
-            <p>We are thrilled to announce our new fall collection! Stop by to check out these eco-friendly fashion pieces:</p>
+            <!-- Article 2 -->
+            <article class="mb-5">
+                <header>
+                    <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-01">October 1, 2024</time></small></p>
+                    <h3>Fashion for the Future</h3>
+                </header>
+                <p>This week, we’re <em>extremely excited</em> about a new sustainable fashion technique called <dfn>sustainable dyeing</dfn>. This technique uses natural plant-based dyes instead of harmful chemicals. In his book, <cite>Fashion and Sustainability</cite>, John Smith describes it as <q>an eco-friendly revolution in the fashion industry.</q></p>
+                <p>To reserve your spot at our exclusive virtual event, contact us before <time datetime="2024-10-31">October 31</time>.</p>
+                <p><a href="mailto:ecofriendly@example.com">ecofriendly@example.com</a><br>123-456-7890</p>
+                <p><strong>Note:</strong> Some natural dyes may fade over time. Be sure to follow care instructions closely!</p>
+            </article>
 
-            <h4>Featured Items:</h4>
-            <ul>
-                <li><strong>Organic Cotton Hoodie</strong> - $45.00</li>
-                <li><strong>Bamboo T-Shirt</strong> - $25.00</li>
-                <li><strong>Recycled Polyester Jacket</strong> - $60.00</li>
-            </ul>
+            <!-- Article 3 -->
+            <article class="mb-5">
+                <header>
+                    <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-05">October 5, 2024</time></small></p>
+                    <h3>Eco-Friendly Accessories Launch</h3>
+                </header>
+                <p>We're excited to announce the launch of our new line of eco-friendly accessories! These products are made from upcycled materials and are designed to add a touch of style while being kind to the planet.</p>
+                <p>Join us for our launch event on <time datetime="2024-11-05">November 5</time> to get exclusive access to our new collection!</p>
+            </article>
 
-            <p>This collection is made from sustainable materials to help reduce our environmental impact.</p>
+            <!-- Article 4 -->
+            <article class="mb-5">
+                <header>
+                    <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-25">October 25, 2024</time></small></p>
+                    <h3>Tips for a Sustainable Wardrobe</h3>
+                </header>
+                <p>Looking to make your wardrobe more eco-friendly? Here are some tips:</p>
+                <ul>
+                    <li>Invest in quality pieces that will last.</li>
+                    <li>Opt for timeless styles over fast fashion trends.</li>
+                    <li>Accessorize with sustainable jewelry and bags.</li>
+                </ul>
+            </article>
+    <!-- Resources Section -->
+    <section id="resources" class="mb-5">
+        <h2 class="text-center mb-4">Top Eco-Friendly Resources</h2>
+        <div class="row">
+            <!-- Resource 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">1. Sustainable Brands</h5>
+                        <p class="card-text">Explore brands committed to sustainability and ethical practices.</p>
+                        <ul>
+                            <li><a href="https://www.patagonia.com/" target="_blank">Patagonia</a></li>
+                            <li><a href="https://www.eileenfisher.com/" target="_blank">Eileen Fisher</a></li>
+                            <li><a href="https://www.reformation.com/" target="_blank">Reformation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Resource 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">2. Green Certifications</h5>
+                        <p class="card-text">Certifications that verify sustainable and eco-friendly practices.</p>
+                        <ul>
+                            <li><a href="https://www.globalorganictextilestandard.org/" target="_blank">GOTS (Global Organic Textile Standard)</a></li>
+                            <li><a href="https://www.fairtrade.net/" target="_blank">Fair Trade Certified</a></li>
+                            <li><a href="https://www.bcorporation.net/" target="_blank">B Corporation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Resource 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">3. Sustainable Living Blogs</h5>
+                        <p class="card-text">Learn from experts about green living and sustainable practices.</p>
+                        <ul>
+                            <li><a href="https://www.treehugger.com/" target="_blank">Treehugger</a></li>
+                            <li><a href="https://www.greenchildmagazine.com/" target="_blank">Green Child Magazine</a></li>
+                            <li><a href="https://ecowarriorprincess.net/" target="_blank">Eco Warrior Princess</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <blockquote>
-                "Fashion is about dressing according to what’s fashionable. Style is more about being yourself." — Oscar de la Renta
-            </blockquote>
-
-            <p>To celebrate the launch, join us for a special event on <time datetime="2024-10-15">October 15</time>. Enjoy refreshments and receive a discount on your first purchase!</p>
-        </article>
-
-        <article>
-            <header>
-                <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-01"> October 1, 2024</time></small></p>
-                <h3>Fashion for the Future</h3>
-            </header>
-
-            <p>This week, I am <em>extremely excited</em> about a new sustainable fashion technique called <dfn>sustainable dyeing</dfn>.
-            In sustainable dyeing, natural plant-based dyes are used instead of harmful chemicals. In his book, <cite>Fashion and Sustainability</cite>, John Smith describes it as <q>an eco-friendly revolution in the fashion industry.</q></p>
-
-            <p>Next month, we will be showcasing a line of clothing using <em>natural, organic dyes</em>. To reserve your spot at our exclusive virtual event, contact us before <time datetime="2024-10-31">October 31</time>.</p>
-
-            <p><a href="mailto:ecofriendly@example.com">ecofriendly@example.com</a><br>
-            123-456-7890</p>
-
-            <p><strong>Warning:</strong> Some natural dyes may fade over time. Be sure to follow care instructions closely!</p>
-        </article>
-
-        <article>
-            <header>
-                <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-05">October 5, 2024</time></small></p>
-                <h3>Eco-Friendly Accessories Launch</h3>
-            </header>
-        
-            <p>We're excited to announce the launch of our new line of eco-friendly accessories! These products are made from upcycled materials and are designed to add a touch of style while being kind to the planet.</p>
-        
-            <p>Join us for our launch event on <time datetime="2024-11-05">November 5</time> to get exclusive access to our new collection!</p>
-        </article>
-        <article>
-            <header>
-                <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-25">October 25, 2024</time></small></p>
-                <h3>Tips for a Sustainable Wardrobe</h3>
-            </header>
-    
-            <p>Looking to make your wardrobe more eco-friendly? Here are some tips:</p>
-            <ul>
-                <li>Invest in quality pieces that will last.</li>
-                <li>Opt for timeless styles over fast fashion trends.</li>
-                <li>Accessorize with sustainable jewelry and bags.</li>
-            </ul>
-            <p>For more tips, check out our upcoming blog post on creating a capsule wardrobe!</p>
-    
-            
-        </article>
-<!--Adding style to this line so it is centered-->
-        <p style="text-align: center; margin: 20px 0;">Stay tuned for more articles and news posts coming your way soon!</p>
-
-
-       
-       
+    <!-- Call to Action Section -->
+    <section id="cta" class="text-center mt-5">
+        <h2>Start Your Eco-Friendly Journey</h2>
+        <p>Explore more resources and shop our eco-friendly collection to make a positive impact today!</p>
+        <a href="collection.html" class="btn btn-success btn-lg">View Accessories</a>
+    </section>
+            <p class="text-center mt-4">Stay tuned for more articles and updates!</p>
+        </section>
     </main>
 
-    <footer>
-        <p>All content copyright <span>&copy;</span> 2024, The Eco-Friendly Fashion Store</p>
+    <!-- Footer -->
+    <footer class="bg-light py-4 text-center">
+        <p>&copy; 2024 Eco-Friendly Fashion Store. All Rights Reserved.</p>
+        <p><a href="mailto:info@ecofriendlyfashion.com">Contact Us</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

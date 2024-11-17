@@ -1,90 +1,131 @@
-<!-- Making the collection page responsive-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Eco-Friendly Fashion Store</title>
-    <link rel="stylesheet" href="responsive.css">
+    <meta name="description" content="Explore our eco-friendly and sustainable accessory collection. Stylish and eco-conscious options for every need.">
+    <meta name="keywords" content="eco-friendly collection, sustainable accessories, denim bags, bamboo products, organic cotton, hemp glasses">
+    <meta name="author" content="Eco-Friendly Fashion Store">
+    <title>Eco-Friendly Accessories | Eco-Friendly Fashion Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Section -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            
-            <li><a href="flex-menu.html">Menu</a></li> 
-        </ul>
-    </nav>
-
-    <!-- Header with Background Image -->
-    <header class="header-banner">
-        <p>Our eco-friendly and organic collection, now available to go!</p>
-         <!-- Award Graphic (Positioned Absolutely in CSS) -->
-         <div id="award">
-            <img src="images/award.png" alt="Award" />
+    <!-- Header Section -->
+    <header class="bg-light py-3">
+        <div class="container text-center">
+            <img src="images/logo.png" alt="Eco-Friendly Fashion Logo" class="img-fluid mb-2" style="max-width: 120px;">
+            <h1 class="display-5">The Eco-Friendly Fashion Store</h1>
+            <p class="lead">Discover sustainable and stylish accessories crafted with care for the planet.</p>
         </div>
     </header>
 
-    <hr>
-
-    <!-- Main Content and Sidebar Container -->
-    <div id="content-container">
-        
-       
-
-        <!-- Main Content Section (Product Collection) -->
-        <section id="eco-collection">
-            <h2>Eco-Friendly Accessory Collection</h2>
-
-            <div class="product">
-                <h3>Denim Bags</h3>
-                <img src="images/recycled-denim.png" alt="Recycled Denim Jeans">
-                <p>Our recycled denim collection features stylish jeans crafted from post-consumer waste materials. Designed with durability and sustainability in mind.</p>
-                <p class="more"><a href="#">Learn more about our recycled denim...</a></p>
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eco-Friendly Fashion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eco-fashion.html">Eco Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="newspage.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store-gallery.html">Store Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Accessories collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="waste-reduction.html">Eco Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eco-table.html">Eco Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-            <div class="product">
-                <h3>Bamboo Items</h3> 
-                <img src="images/bamboo-accessories.png" alt="Bamboo Accessories">
-                <p>Our bamboo accessories include hats, scarves, and more, all made from sustainably sourced bamboo fiber for a natural look and feel.</p>
-                <p class="more"><a href="#">Learn more about our bamboo accessories...</a></p>
-            </div>
+    <hr class="my-4">
 
-            <div class="product">
-                <h3>Cotton Bags</h3>
-                <img src="images/bag.png" alt="Cotton Bags">
-                <p>Eco-friendly and stylish, our organic cotton bags are perfect for daily use. Made from 100% organic cotton, they are durable and sustainably sourced.</p>
-                <p class="more"><a href="#">Learn more about our organic cotton bags...</a></p>
-            </div>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Intro Section -->
+        <section id="intro" class="text-center mb-5">
+            <h2>Welcome to Our Accessory Collection</h2>
+            <p>Our eco-friendly collection includes beautifully crafted accessories made from sustainable materials like recycled denim, bamboo, organic cotton, and hemp. Each product is designed with the planet in mind.</p>
+        </section>
 
-            <div class="product">
-                <h3>Hemp Glasses</h3>
-                <img src="images/glass.png" alt="Hemp glasses">
-                <p>Our hemp sunglasses are designed to provide a natural and stylish look. Crafted from sustainable hemp fiber, these shades are both eco-friendly and unique.</p>
-                <p class="more"><a href="#">Learn more about our hemp sunglasses...</a></p>
+        <!-- Product Grid -->
+        <section id="collection" class="mb-5">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="images/recycled-denim.png" class="card-img-top" alt="Recycled Denim Bags">
+                        <div class="card-body">
+                            <h5 class="card-title">Denim Bags</h5>
+                            <p class="card-text">Stylish bags crafted from recycled denim for a durable and eco-friendly look.</p>
+                            <p class="price text-success"><strong>$25.00</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="images/bamboo-accessories.png" class="card-img-top" alt="Bamboo Accessories">
+                        <div class="card-body">
+                            <h5 class="card-title">Bamboo Accessories</h5>
+                            <p class="card-text">Sustainably sourced bamboo products, including hats and scarves.</p>
+                            <p class="price text-success"><strong>$30.00</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="images/bag.png" class="card-img-top" alt="Cotton Bags">
+                        <div class="card-body">
+                            <h5 class="card-title">Cotton Bags</h5>
+                            <p class="card-text">Durable, eco-friendly cotton bags for daily use, made from organic cotton.</p>
+                            <p class="price text-success"><strong>$20.00</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="images/glass.png" class="card-img-top" alt="Hemp Sunglasses">
+                        <div class="card-body">
+                            <h5 class="card-title">Hemp Glasses</h5>
+                            <p class="card-text">Stylish sunglasses made from sustainable hemp fibers.</p>
+                            <p class="price text-success"><strong>$35.00</strong></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Sidebar Section (Store Hours) -->
-        <aside>
-            <h3>Store Hours</h3>
-            <p><span class="day">Monday:</span> 9am to 5pm </p>
-            <p><span class="day">Tuesday:</span> 9am to 5pm </p>
-            <p><span class="day">Wednesday:</span> 9am to 5pm </p>
-            <p><span class="day">Thursday:</span> 9am to 5pm </p>
-            <p><span class="day">Friday:</span> 9am to 5pm </p>
-            <p><span class="day">Saturday:</span> 10am - 4pm</p>
-            <p><span class="day">Sunday:</span> Closed</p>
-        </aside>
-    </div>
+        <!-- Store Hours Section -->
+        <section id="store-hours" class="mb-5 text-center">
+            <h2>Store Hours</h2>
+            <p><strong>Monday to Friday:</strong> 9am to 5pm</p>
+            <p><strong>Saturday:</strong> 10am to 4pm</p>
+            <p><strong>Sunday:</strong> Closed</p>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="text-center">
+            <h2>Start Your Eco-Friendly Journey</h2>
+            <p>Shop our collection and make a difference with your fashion choices today!</p>
+            <a href="store-gallery.html" class="btn btn-success btn-lg">Visit Our Gallery</a>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p>All content copyright <span>&copy;</span> 2024, The Eco-Friendly Fashion Store</p>
+    <footer class="bg-light py-4 text-center">
+        <p>&copy; 2024 Eco-Friendly Fashion Store. All Rights Reserved.</p>
+        <p><a href="mailto:info@ecofriendlyfashion.com">Contact Us</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,41 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Eco-Friendly Fashion Store</title>
+    <meta name="description" content="Discover sustainable fashion and eco-friendly living with The Eco-Friendly Fashion Store. Join us for tips, resources, and the latest in green living!">
+    <meta name="keywords" content="eco-friendly, sustainable fashion, green living, waste reduction, eco store">
+    <title>The Eco-Friendly Fashion Store | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section with logo and title -->
+    <!-- Header Section -->
     <header class="bg-light py-3">
         <div class="container text-center">
-            <img src="images/logo.png" alt="Eco-Friendly Fashion Logo" class="img-fluid mb-2" style="max-width: 120px;">
+            <img src="images/logo.png" alt="Logo of The Eco-Friendly Fashion Store" class="img-fluid mb-2" style="max-width: 120px;">
             <h1 class="display-5">The Eco-Friendly Fashion Store</h1>
         </div>
     </header>
 
-    <!-- Navigation Section with links to different sections of the page -->
+    <!-- Navigation Section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">The Eco-Friendly Fashion Store</a>
+            <a class="navbar-brand" href="index.html">Eco Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="eco-fashion.html">Eco Fashion</a></li>
                     <li class="nav-item"><a class="nav-link" href="newspage.html">News</a></li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                    <li class="nav-item"><a class="nav-link" href="store-gallery.html"> Store Gallery</a></li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="collection.html">Accessories</a></li>
-                    
-                    
+                    <li class="nav-item"><a class="nav-link" href="store-gallery.html">Store Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Accessories collection</a></li>
                     <li class="nav-item"><a class="nav-link" href="waste-reduction.html">Eco Guide</a></li>
-                    <li class="nav-item"><a class="nav-link" href="eco-table.html">Eco Table </a></li>
+                    <li class="nav-item"><a class="nav-link" href="eco-table.html">Eco Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -61,7 +58,7 @@
                 <p>Our mission is to promote sustainable fashion by offering stylish, eco-friendly alternatives to traditional clothing. We strive to reduce environmental impact by using organic and recycled materials in all our products.</p>
             </div>
             <div class="col-md-6">
-                <img src="images/mission.jpg" alt="Sustainability Mission" class="img-fluid rounded">
+                <img src="images/mission.jpg" alt="Image representing sustainability efforts" class="img-fluid rounded">
             </div>
         </section>
 
@@ -118,32 +115,29 @@
                     <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-01">October 1, 2024</time></small></p>
                 </header>
                 <h3>Fashion for the Future</h3>
-                <p>This week, I am <em>extremely excited</em> about a new sustainable fashion technique called <dfn>sustainable dyeing</dfn>. In sustainable dyeing, natural plant-based dyes are used instead of harmful chemicals. In his book, <cite>Fashion and Sustainability</cite>, John Smith describes it as <q>an eco-friendly revolution in the fashion industry.</q></p>
+                <p>This week, I am <em>extremely excited</em> about a new sustainable fashion technique called <dfn>sustainable dyeing</dfn>. In sustainable dyeing, natural plant-based dyes are used instead of harmful chemicals.</p>
             </article>
         </section>
 
-        <!-- Location Section -->
-        <section id="location" class="text-center">
-            <h2>Location and Hours</h2>
-            <p>Our store is located at 123 Green Street, Eco City.</p>
-            <p><strong>Hours:</strong> Monday - Friday: 10 AM - 6 PM | Saturday & Sunday: Closed</p>
-        </section>
-
-        <section>
-            <h2>Choose Eco-Friendly Clothing</h2>
-            <p>Join us on a colorful journey to discover sustainable fashion!</p>
-            <p>Get ready to be inspired and make a positive impact with your clothing choices!</p>
-            <video width="320" height="262" controls>
-                <source src="sustainable_video.mp4" type="video/mp4">  <!--adding the video mp4-->
-                <!-- Fallback for browsers that don’t support HTML5 -->
-                Sorry, your browser doesn't support HTML5 video.
-            </video>
+        <!-- Video Section -->
+        <section id="video" class="mb-5">
+            <h2 class="text-center mb-4">Choose Eco-Friendly Clothing</h2>
+            <p class="text-center">Join us on a colorful journey to discover sustainable fashion!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <video width="100%" controls>
+                        <source src="sustainable_video.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support HTML5 video.
+                    </video>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-light py-3 text-center">
+    <footer class="bg-light py-4 text-center">
         <p>&copy; 2024 Eco-Friendly Fashion Store. All Rights Reserved.</p>
+        <p><a href="mailto:info@ecofriendlyfashion.com">Contact Us</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
