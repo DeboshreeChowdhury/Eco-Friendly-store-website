@@ -5,46 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover sustainable fashion and eco-friendly living with The Eco-Friendly Fashion Store. Join us for tips, resources, and the latest in green living!">
     <meta name="keywords" content="eco-friendly, sustainable fashion, green living, waste reduction, eco store">
+    <meta name="author" content="Eco-Friendly Fashion Store">
     <title>The Eco-Friendly Fashion Store | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to Content</a>
+
     <!-- Header Section -->
     <header class="bg-light py-3">
         <div class="container text-center">
             <img src="images/logo.png" alt="Logo of The Eco-Friendly Fashion Store" class="img-fluid mb-2" style="max-width: 120px;">
             <h1 class="display-5">The Eco-Friendly Fashion Store</h1>
+            <p class="lead">Your destination for sustainable and stylish living.</p>
         </div>
     </header>
 
     <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html" aria-label="Go to Home Page">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="eco-fashion.html" aria-label="Learn about Eco-Friendly Fashion">Fashion</a></li>
-                    <li class="nav-item"><a class="nav-link" href="newspage.html" aria-label="Read the Latest News">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="store-gallery.html" aria-label="Explore the Store Gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="collection.html" aria-label="View Accessories Collection">Accessories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="waste-reduction.html" aria-label="Explore the Eco Guide">Guide</a></li>
-                    <li class="nav-item"><a class="nav-link" href="eco-table.html" aria-label="Compare Sustainable Materials">Materials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="order.html" aria-label="Shop Eco-Friendly Products Now">Shop Now</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html" aria-label="Contact the Store">Contact</a></li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eco-fashion.html">Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="newspage.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store-gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="waste-reduction.html">Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eco-table.html">Materials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Shop Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="bg-light px-3 py-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Welcome</li>
+        </ol>
+    </nav>
 
     <hr class="my-4">
 
     <!-- Main Content -->
-    <main class="container my-5">
+    <main id="main-content" class="container my-5">
         <!-- About Section -->
         <section id="about" class="mb-5">
             <h2 class="text-center mb-4">The Store</h2>
@@ -107,18 +119,6 @@
             </div>
         </section>
 
-        <!-- News Section -->
-        <section id="news" class="mb-5">
-            <h2 class="text-center mb-4">Latest News in Sustainable Fashion</h2>
-            <article>
-                <header>
-                    <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-01">October 1, 2024</time></small></p>
-                </header>
-                <h3>Fashion for the Future</h3>
-                <p>This week, I am <em>extremely excited</em> about a new sustainable fashion technique called <dfn>sustainable dyeing</dfn>. In sustainable dyeing, natural plant-based dyes are used instead of harmful chemicals.</p>
-            </article>
-        </section>
-
         <!-- Video Section -->
         <section id="video" class="mb-5">
             <h2 class="text-center mb-4">Choose Eco-Friendly Clothing</h2>
@@ -133,13 +133,18 @@
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
+    
+    
     <footer class="bg-light py-4 text-center">
         <p>&copy; 2024 Eco-Friendly Fashion Store. All Rights Reserved.</p>
-        <p><a href="mailto:info@ecofriendlyfashion.com">Contact Us</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
     </footer>
-
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+    <!-- Bootstrap Bundle JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    </body>
+    </html>
+    

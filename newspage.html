@@ -21,17 +21,16 @@
     </header>
 
     <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
-           
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="eco-fashion.html">Fashion</a></li>
-                    <li class="nav-item"><a class="nav-link" href="newspage.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="newspage.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="store-gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="collection.html">Accessories</a></li>
                     <li class="nav-item"><a class="nav-link" href="waste-reduction.html">Guide</a></li>
@@ -50,6 +49,7 @@
         <!-- News Section -->
         <section id="news" class="mb-5">
             <h2 class="text-center mb-4">Latest News</h2>
+
             <!-- Article 1 -->
             <article class="mb-5">
                 <header>
@@ -62,7 +62,6 @@
                     <li><strong>Bamboo T-Shirt</strong> - $25.00</li>
                     <li><strong>Recycled Polyester Jacket</strong> - $60.00</li>
                 </ul>
-                <p>This collection is made from sustainable materials to help reduce our environmental impact.</p>
                 <blockquote class="blockquote">"Fashion is about dressing according to what’s fashionable. Style is more about being yourself." — Oscar de la Renta</blockquote>
                 <p>Join us for a special event on <time datetime="2024-10-15">October 15</time>. Enjoy refreshments and receive a discount on your first purchase!</p>
             </article>
@@ -73,10 +72,9 @@
                     <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-01">October 1, 2024</time></small></p>
                     <h3>Fashion for the Future</h3>
                 </header>
-                <p>This week, we’re <em>extremely excited</em> about a new sustainable fashion technique called <dfn>sustainable dyeing</dfn>. This technique uses natural plant-based dyes instead of harmful chemicals. In his book, <cite>Fashion and Sustainability</cite>, John Smith describes it as <q>an eco-friendly revolution in the fashion industry.</q></p>
-                <p>To reserve your spot at our exclusive virtual event, contact us before <time datetime="2024-10-31">October 31</time>.</p>
-                <p><a href="mailto:ecofriendly@example.com">ecofriendly@example.com</a><br>123-456-7890</p>
-                <p><strong>Note:</strong> Some natural dyes may fade over time. Be sure to follow care instructions closely!</p>
+                <p>We’re excited about a sustainable fashion technique called <dfn>sustainable dyeing</dfn>, which uses plant-based dyes instead of harmful chemicals. In <cite>Fashion and Sustainability</cite>, John Smith describes it as <q>an eco-friendly revolution in the fashion industry.</q></p>
+                <p>Contact us before <time datetime="2024-10-31">October 31</time> to join our exclusive virtual event:</p>
+                <p><a href="mailto:info@ecofriendlyfashion.com">info@ecofriendlyfashion.com</a><br>123-456-7890</p>
             </article>
 
             <!-- Article 3 -->
@@ -85,86 +83,65 @@
                     <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-05">October 5, 2024</time></small></p>
                     <h3>Eco-Friendly Accessories Launch</h3>
                 </header>
-                <p>We're excited to announce the launch of our new line of eco-friendly accessories! These products are made from upcycled materials and are designed to add a touch of style while being kind to the planet.</p>
-                <p>Join us for our launch event on <time datetime="2024-11-05">November 5</time> to get exclusive access to our new collection!</p>
+                <p>We’re launching eco-friendly accessories made from upcycled materials. Join us on <time datetime="2024-11-05">November 5</time> for exclusive access!</p>
             </article>
+        </section>
 
-            <!-- Article 4 -->
-            <article class="mb-5">
-                <header>
-                    <p><small>Posted by Eco-Friendly Fashion, <time datetime="2024-10-25">October 25, 2024</time></small></p>
-                    <h3>Tips for a Sustainable Wardrobe</h3>
-                </header>
-                <p>Looking to make your wardrobe more eco-friendly? Here are some tips:</p>
-                <ul>
-                    <li>Invest in quality pieces that will last.</li>
-                    <li>Opt for timeless styles over fast fashion trends.</li>
-                    <li>Accessorize with sustainable jewelry and bags.</li>
-                </ul>
-            </article>
-    <!-- Resources Section -->
-    <section id="resources" class="mb-5">
-        <h2 class="text-center mb-4">Top Eco-Friendly Resources</h2>
-        <div class="row">
-            <!-- Resource 1 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">1. Sustainable Brands</h5>
-                        <p class="card-text">Explore brands committed to sustainability and ethical practices.</p>
-                        <ul>
-                            <li><a href="https://www.patagonia.com/" target="_blank">Patagonia</a></li>
-                            <li><a href="https://www.eileenfisher.com/" target="_blank">Eileen Fisher</a></li>
-                            <li><a href="https://www.reformation.com/" target="_blank">Reformation</a></li>
-                        </ul>
+        <!-- Resources Section -->
+        <section id="resources" class="mb-5">
+            <h2 class="text-center mb-4">Top Eco-Friendly Resources</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">1. Sustainable Brands</h5>
+                            <ul>
+                                <li><a href="https://www.patagonia.com/" target="_blank">Patagonia</a></li>
+                                <li><a href="https://www.eileenfisher.com/" target="_blank">Eileen Fisher</a></li>
+                                <li><a href="https://www.reformation.com/" target="_blank">Reformation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">2. Green Certifications</h5>
+                            <ul>
+                                <li><a href="https://www.globalorganictextilestandard.org/" target="_blank">GOTS</a></li>
+                                <li><a href="https://www.fairtrade.net/" target="_blank">Fair Trade</a></li>
+                                <li><a href="https://www.bcorporation.net/" target="_blank">B Corporation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">3. Sustainable Blogs</h5>
+                            <ul>
+                                <li><a href="https://www.treehugger.com/" target="_blank">Treehugger</a></li>
+                                <li><a href="https://www.greenchildmagazine.com/" target="_blank">Green Child Magazine</a></li>
+                                <li><a href="https://ecowarriorprincess.net/" target="_blank">Eco Warrior Princess</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Resource 2 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">2. Green Certifications</h5>
-                        <p class="card-text">Certifications that verify sustainable and eco-friendly practices.</p>
-                        <ul>
-                            <li><a href="https://www.globalorganictextilestandard.org/" target="_blank">GOTS (Global Organic Textile Standard)</a></li>
-                            <li><a href="https://www.fairtrade.net/" target="_blank">Fair Trade Certified</a></li>
-                            <li><a href="https://www.bcorporation.net/" target="_blank">B Corporation</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Resource 3 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">3. Sustainable Living Blogs</h5>
-                        <p class="card-text">Learn from experts about green living and sustainable practices.</p>
-                        <ul>
-                            <li><a href="https://www.treehugger.com/" target="_blank">Treehugger</a></li>
-                            <li><a href="https://www.greenchildmagazine.com/" target="_blank">Green Child Magazine</a></li>
-                            <li><a href="https://ecowarriorprincess.net/" target="_blank">Eco Warrior Princess</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Call to Action Section -->
-    <section id="cta" class="text-center mt-5">
-        <h2>Start Your Eco-Friendly Journey</h2>
-        <p>Explore more resources and shop our eco-friendly collection to make a positive impact today!</p>
-        <a href="collection.html" class="btn btn-success btn-lg">View Accessories</a>
-    </section>
-            <p class="text-center mt-4">Stay tuned for more articles and updates!</p>
+        <!-- Call to Action Section -->
+        <section id="cta" class="text-center mt-5">
+            <h2>Start Your Eco-Friendly Journey</h2>
+            <p>Explore resources and shop our collection to make a positive impact today!</p>
+            <a href="collection.html" class="btn btn-success btn-lg">View Accessories</a>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-light py-4 text-center">
         <p>&copy; 2024 Eco-Friendly Fashion Store. All Rights Reserved.</p>
-        <p><a href="mailto:info@ecofriendlyfashion.com">Contact Us</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
