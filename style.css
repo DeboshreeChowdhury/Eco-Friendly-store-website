@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: "Georgia", serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--earth-tone);
     margin: 0;
     padding: 0;
@@ -235,4 +235,11 @@ video {
     main {
         padding: 10px;
     }
+}
+
+button:hover {
+    background-color: #456f3d;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
