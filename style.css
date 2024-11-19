@@ -243,3 +243,20 @@ button:hover {
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
+.animated-fashion {
+    animation: bounce 3s infinite ease-in-out;
+    height: 60%; /* Fixed height for smaller size */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure it's treated as a block-level element */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Default position */
+    }
+    50% {
+        transform: translateY(-15px); /* Move up by 15px */
+    }
+}
+

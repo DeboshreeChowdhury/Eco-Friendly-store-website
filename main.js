@@ -86,3 +86,19 @@ window.onscroll = function () {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
+const authTabs = document.querySelector('#authTabs');
+const activeTabKey = 'activeTab';
+
+// Remember active tab
+authTabs.addEventListener('click', (event) => {
+    if (event.target.getAttribute('data-bs-toggle') === 'tab') {
+        localStorage.setItem(activeTabKey, event.target.id);
+    }
+});
+
+// Load last active tab
+const lastActiveTab = localStorage.getItem(activeTabKey);
+if (lastActiveTab) {
+    const lastActiveTabElement = document.getElementById(lastActiveTab);
+    new bootstrap.Tab(lastActiveTabElement).show();
+}
