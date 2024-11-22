@@ -271,3 +271,14 @@ button:hover {
     }
 }
 
+/* Uniform card height for product boxes */
+.card {
+    height: 100%; /* Make sure all cards are the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly distribute content */
+}
+
+
+
+
