@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to Content</a>
+
     <!-- Header Section -->
     <header class="bg-light py-3">
         <div class="container text-center">
@@ -36,6 +39,7 @@
                     <li class="nav-item"><a class="nav-link" href="eco-table.html">Materials</a></li>
                     <li class="nav-item"><a class="nav-link" href="order.html">Shop Now</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="auth.html">Sign In / Sign Up</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +48,7 @@
     <hr class="my-4">
 
     <!-- Main Content -->
-    <main class="container my-5">
+    <main id="main-content" class="container my-5">
         <!-- Waste Reduction Tips Section -->
         <section id="waste-reduction" class="mb-5">
             <h2 class="text-center mb-4">Practical Waste Reduction Tips</h2>
@@ -52,45 +56,66 @@
             
             <div class="row">
                 <div class="col-md-6">
-                    <h3>1. Reduce</h3>
-                    <ul>
-                        <li>Buy only what you need to avoid overconsumption.</li>
-                        <li>Opt for reusable items like water bottles and shopping bags.</li>
-                        <li>Say no to single-use plastics.</li>
-                    </ul>
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">1. Reduce</h3>
+                            <ul>
+                                <li>Buy only what you need to avoid overconsumption.</li>
+                                <li>Opt for reusable items like water bottles and shopping bags.</li>
+                                <li>Say no to single-use plastics.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>2. Reuse</h3>
-                    <ul>
-                        <li>Repurpose old clothing, containers, and jars creatively.</li>
-                        <li>Donate items you no longer use instead of throwing them away.</li>
-                        <li>Shop at thrift stores and support second-hand markets.</li>
-                    </ul>
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">2. Reuse</h3>
+                            <ul>
+                                <li>Repurpose old clothing, containers, and jars creatively.</li>
+                                <li>Donate items you no longer use instead of throwing them away.</li>
+                                <li>Shop at thrift stores and support second-hand markets.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Recycling Tips Section -->
         <section id="recycling" class="mb-5">
-            <h3>3. Recycle</h3>
-            <p>Recycling is essential to reduce waste. Follow these best practices:</p>
-            <ul>
-                <li>Sort your recyclables properly and clean them before disposal.</li>
-                <li>Familiarize yourself with local recycling programs and guidelines.</li>
-                <li>Recycle electronics through certified e-waste programs.</li>
-            </ul>
-            <p>Learn more about recycling practices by visiting <a href="https://www.epa.gov/recycle" target="_blank">EPA's Recycling Guide</a>.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/recycle-tips.jpg" alt="Recycling Tips" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h3>3. Recycle</h3>
+                    <p>Recycling is essential to reduce waste. Follow these best practices:</p>
+                    <ul>
+                        <li>Sort your recyclables properly and clean them before disposal.</li>
+                        <li>Familiarize yourself with local recycling programs and guidelines.</li>
+                        <li>Recycle electronics through certified e-waste programs.</li>
+                    </ul>
+                    <p>Learn more about recycling practices by visiting <a href="https://www.epa.gov/recycle" target="_blank">EPA's Recycling Guide</a>.</p>
+                </div>
+            </div>
         </section>
 
         <!-- DIY Section -->
         <section id="diy" class="mb-5">
-            <h3>4. DIY Upcycling Ideas</h3>
-            <p>Get creative with upcycling! Turn old items into something new and useful:</p>
-            <ul>
-                <li>Transform old t-shirts into reusable shopping bags.</li>
-                <li>Use glass jars as plant pots or storage containers.</li>
-                <li>Create unique home decor using recycled materials.</li>
-            </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>4. DIY Upcycling Ideas</h3>
+                    <ul>
+                        <li>Transform old t-shirts into reusable shopping bags.</li>
+                        <li>Use glass jars as plant pots or storage containers.</li>
+                        <li>Create unique home decor using recycled materials.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/OIP.jpg" alt="DIY Upcycling Ideas" class="img-fluid rounded shadow">
+                </div>
+            </div>
         </section>
 
         <!-- Call to Action -->
@@ -105,6 +130,11 @@
     <footer class="bg-light py-4 text-center">
         <p>&copy; 2024 Eco-Friendly Fashion Store. All Rights Reserved.</p>
         <p><a href="mailto:info@ecofriendlyfashion.com">Contact Us</a></p>
+        <p>
+            Follow us: 
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
