@@ -28,16 +28,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="eco-fashion.html">Fashion</a></li>
                     <li class="nav-item"><a class="nav-link" href="newspage.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="store-gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="waste-reduction.html">Guide</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="eco-table.html">Materials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eco-table.html">Materials</a></li>
                     <li class="nav-item"><a class="nav-link" href="order.html">Shop Now</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <!-- Sign-In/Sign-Up -->
                     <li class="nav-item"><a class="nav-link" href="auth.html">Sign In / Sign Up</a></li>
-
                 </ul>
             </div>
         </div>
@@ -50,9 +50,15 @@
         <!-- Eco-Table Section -->
         <section id="eco-table" class="mb-5">
             <h2 class="text-center mb-4">Environmental Impact of Materials</h2>
-            <p class="text-center">This table compares the environmental impact of commonly used materials in the fashion industry. Learn how sustainable materials can make a difference.</p>
+            <p class="text-center">Compare the environmental impact of various materials in the fashion industry and choose better alternatives.</p>
+
+            <!-- Search Bar -->
+            <div class="mb-3">
+                <input id="materialSearch" type="text" class="form-control" placeholder="Search for materials..." onkeyup="searchTable()">
+            </div>
+
             <div class="table-responsive">
-                <table class="table table-bordered table-striped text-center">
+                <table class="table table-bordered table-striped text-center" id="materialTable">
                     <thead class="table-success">
                         <tr>
                             <th>Material</th>
@@ -60,6 +66,7 @@
                             <th>Energy Usage (kWh/kg)</th>
                             <th>CO<sub>2</sub> Emissions (kg/kg)</th>
                             <th>Biodegradability</th>
+                            <th>Sustainability Rating</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -69,6 +76,7 @@
                             <td>2.5</td>
                             <td>1.8</td>
                             <td>High</td>
+                            <td><span class="badge bg-success">Excellent</span></td>
                         </tr>
                         <tr>
                             <td>Bamboo Fiber</td>
@@ -76,6 +84,7 @@
                             <td>1.2</td>
                             <td>1.5</td>
                             <td>High</td>
+                            <td><span class="badge bg-success">Excellent</span></td>
                         </tr>
                         <tr>
                             <td>Recycled Polyester</td>
@@ -83,6 +92,7 @@
                             <td>1.0</td>
                             <td>2.1</td>
                             <td>Low</td>
+                            <td><span class="badge bg-warning text-dark">Moderate</span></td>
                         </tr>
                         <tr>
                             <td>Conventional Cotton</td>
@@ -90,6 +100,7 @@
                             <td>3.0</td>
                             <td>3.8</td>
                             <td>Medium</td>
+                            <td><span class="badge bg-warning text-dark">Moderate</span></td>
                         </tr>
                         <tr>
                             <td>Hemp</td>
@@ -97,6 +108,7 @@
                             <td>0.8</td>
                             <td>1.2</td>
                             <td>High</td>
+                            <td><span class="badge bg-success">Excellent</span></td>
                         </tr>
                         <tr>
                             <td>Leather</td>
@@ -104,6 +116,7 @@
                             <td>5.0</td>
                             <td>6.0</td>
                             <td>Low</td>
+                            <td><span class="badge bg-danger">Poor</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -114,36 +127,36 @@
         <section id="key-takeaways" class="mb-5">
             <h3 class="text-center mb-4">Key Takeaways</h3>
             <ul class="list-group">
-                <li class="list-group-item">Organic materials like organic cotton and hemp are highly biodegradable and use less water compared to conventional cotton.</li>
-                <li class="list-group-item">Recycled materials like polyester have lower water usage but emit more CO<sub>2</sub>.</li>
-                <li class="list-group-item">Conventional materials like leather and conventional cotton have a higher environmental footprint.</li>
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Organic materials like hemp and organic cotton are highly biodegradable and eco-friendly.</li>
+                <li class="list-group-item"><i class="bi bi-exclamation-circle text-warning"></i> Recycled materials like polyester have low water usage but emit more CO<sub>2</sub>.</li>
+                <li class="list-group-item"><i class="bi bi-x-circle text-danger"></i> Conventional materials like leather have a high environmental footprint and low sustainability.</li>
             </ul>
         </section>
 
         <!-- Call to Action -->
         <section id="cta" class="text-center">
             <h2>Choose Sustainable Materials</h2>
-            <p>Make a positive impact on the environment by choosing eco-friendly materials for your wardrobe.</p>
-            <a href="collection.html" class="btn btn-success btn-lg">Explore Accessories</a>
+            <p>Make informed choices and opt for eco-friendly materials to reduce your carbon footprint.</p>
+            <a href="order.html" class="btn btn-success btn-lg">Shop Now</a>
         </section>
     </main>
 
-     <!-- Footer -->
-     <footer class="bg-light py-4 text-center">
-        <p>&copy; 2024 Eco-Friendly Fashion Store. All Rights Reserved.</p>
-        <p><a href="contact.html">Contact Us</a></p>
-        <p>
-            Follow us: 
-            <a href="https://facebook.com" target="_blank">Facebook</a> | 
-            <a href="https://instagram.com" target="_blank">Instagram</a> | 
-            
-        </p>
-    </footer>
-    
-    <!-- Custom JavaScript -->
-    <script src="main.js"></script>
-    
-    <!-- Bootstrap Bundle JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="bg-light py-4 text-center">
+    <p>&copy; 2024 Eco-Friendly Fashion Store. All Rights Reserved.</p>
+    <p><a href="contact.html">Contact Us</a></p>
+    <p>
+        Follow us: 
+        <a href="https://facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://instagram.com" target="_blank">Instagram</a> | 
+        
+    </p>
+</footer>
+
+<!-- Custom JavaScript -->
+<script src="main.js"></script>
+
+<!-- Bootstrap Bundle JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
